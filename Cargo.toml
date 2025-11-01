@@ -1,0 +1,20 @@
+[package]
+name = "rust-playground"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+crossterm = { version = "0.27", features = ["event-stream"] }
+futures = "0.3"
+pathdiff = "0.2"
+ratatui = "0.26"
+reqwest = { version = "0.12", features = ["json", "gzip"] }
+sanitize-filename = "0.5"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sled = "0.34"
+thiserror = "1.0"
+tokio = { version = "1.37", features = ["full"] }
+uuid = { version = "1.7", features = ["v4"] }
